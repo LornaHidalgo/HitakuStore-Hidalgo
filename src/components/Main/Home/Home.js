@@ -10,7 +10,7 @@ export const Home = () => {
       
       <Carousel>
         <Carousel.Item>
-          <img className="d-block w-100" src="banner.jpg" alt="First slide" />
+          <img className="bannerHome " src="banner.jpg" alt="First slide" />
           <Carousel.Caption>
          
             

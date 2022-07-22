@@ -24,7 +24,10 @@ export const NavBar = () => {
                 <Link to="/productos/all">Todos</Link>
                 <NavDropdown.Divider />
                 <Link to="/productos/Posters">Posters</Link>
+                <Link to="/productos/Figuras">Figuras</Link>
                 <Link to="/productos/Llaveros">Llaveros</Link>
+                <Link to="/productos/Otros">Otros</Link>
+                
                
               </NavDropdown>
               <Link to="/contacto">Contacto</Link>
