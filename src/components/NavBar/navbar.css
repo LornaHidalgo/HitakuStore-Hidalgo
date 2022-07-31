@@ -2,7 +2,7 @@
   text-decoration: none;
 }
 
-/* CARTWIDGET */
+
 
 .fas.fa-shopping-cart {
   display: flex;
@@ -26,7 +26,7 @@
   align-items: center;
 }
 
-/* NAVBAR */
+
 .navbar-bg {
   background-color: white !important;
 }
@@ -54,7 +54,7 @@
   }
 }
 
-/* CARROUSEL use it as a static image */
+
 .carousel-control-prev,
 .carousel-control-next,
 .carousel-indicators {

@@ -21,22 +21,13 @@ export const Cart = () => {
           <Link to="productos/all">productos</Link>{" "}
         </h3>
       )}
-      {cart.length !== 0 && (
-        <Container className="cart__header">
-          <div className="cart__header--info">Detalle</div>
-          <div className="cart__header--actions">
-            <div>Añadir</div>
-            <div>Cantidad</div>
-            <div>Precio</div>
-            <div>Subtotal</div>
-            <div>Eliminar</div>
-          </div>
-        </Container>
-      )}
+      
+        
       {cart.length !== 0 &&
         cart.map(({ item, counter }) => (
           <Container className="card__cart" id={item.id} key={item.id}>
             <div className="card__cart--info">
+              
               <div className="card__cart--img">
                 <img src={item.Image} alt="Foto de producto" />
               </div>
@@ -45,19 +36,27 @@ export const Cart = () => {
                 <p className="card__cart--desc">{item.description}</p>
               </div>
             </div>
+
             <div className="card__cart--actions">
-              <ItemCount item={item} />
+             <h5>Cantidad</h5>
               <div className="price">{counter}</div>
+            <h5>Añadir</h5>
+              <ItemCount item={item} />
+              
+              <h5>Precio</h5>
               <div className="price">${item.price}</div>
+              <h5>Precio Total</h5>
               <div className="price">${getSubtotal(counter, item.price)}</div>
-              <button
+              
+            </div>
+            <button 
                 className="btn_remove btn"
                 onClick={() => removeItem(item.id)}
               >
                 X
               </button>
-            </div>
           </Container>
+         
         ))}
       {cart.length !== 0 && (
         <Container className="cart__footer">

@@ -1,4 +1,4 @@
-// Initialize Cloud Firestore through Firebase
+
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore"
 
